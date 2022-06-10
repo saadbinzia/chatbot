@@ -12,4 +12,4 @@ def chatBot():
 
 
 if __name__ == '__main__':
-    app.run(host='192.168.18.209', debug=True)
+    app.run(host='https://mobi-zilla-chatbot.vercel.app/', debug=True)
