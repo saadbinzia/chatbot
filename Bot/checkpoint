@@ -1,0 +1,2 @@
+model_checkpoint_path: "/home/saad/Projects/mobizilla/chatbot/Bot/model.tflearn"
+all_model_checkpoint_paths: "/home/saad/Projects/mobizilla/chatbot/Bot/model.tflearn"
