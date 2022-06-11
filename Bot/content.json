@@ -1,38 +1,296 @@
-{"intents": [
-        {"tag": "1",
-         "patterns": ["Hi","Is anyone there?", "Hello"],
-         "responses": ["Hi", "Hello", "Hi there, how can I help?"],
-         "context_set": ""
-        },
-        {"tag": "2",
-         "patterns": ["Who are you","What is you name","Do you have a name"],
-         "responses": ["Hi, I'm MOB-BOT", "My name is MOB-BOT", "I'm MOB-BOT"],
-         "context_set": ""
-        },
-        {"tag": "5",
-         "patterns": ["How is the weather today"],
-         "responses": ["It's sunny day"],
-         "context_set": ""
-        },
-        {"tag": "6",
-         "patterns": ["What events are available today"],
-         "responses": ["Live in concent will be at UOM JJ hall"],
-         "context_set": ""
-        },
-        {"tag": "7",
-         "patterns": ["How are you","What's up"],
-         "responses": ["I'm fine, Thanks for asking.","I'm doing well","I'm fine. And you ?"],
-         "context_set": ""
-        },
-        {"tag": "8",
-         "patterns": ["Bye", "See you later", "Goodbye"],
-         "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."],
-         "context_set": ""
-        },
-        {"tag": "9",
-         "patterns": ["Thank you"],
-         "responses": ["You are welcome"],
-         "context_set": ""
-        }
-   ]
+{
+	"intents": [
+		{
+			"tag": "greeting",
+			"patterns": [
+				"Hi",
+				"Is anyone there",
+				"Hello",
+				"Good day",
+				"Hola",
+				"Hii",
+				"there",
+				"helo",
+				"?",
+				"hllo",
+				"can I talk to you",
+				"hay",
+				"hey"
+			],
+			"responses": [
+				"Hi",
+				"Hello",
+				"Hi there, how can I help?",
+				"Hello!, how can I help you?",
+				"Good to see you! How may I help you?",
+				"Hi there, how can I help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "muslim_greeting",
+			"patterns": [
+				"Asslam o Alaikum",
+				"Assalam o Alaikum",
+				"Assalam Alaikum",
+				"aoa",
+				"salam",
+				"salem",
+				"Assalam u alaikum"
+			],
+			"responses": [
+				"Wa Alaikum Assalam, how can I help you?",
+				"Salam, How may I help you?",
+				"Was Salam, how can I help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "greetingMore",
+			"patterns": [
+				"How are you",
+				"What's up",
+				"How's it going?",
+				"hru",
+				"how r u",
+				"how r you",
+				"how's you",
+				"Hows it going"
+			],
+			"responses": [
+				"I am fine!, How about you?",
+				"I am good, you?",
+				"I am fine, thankyou. What about you?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "userGreetingMore",
+			"patterns": [
+				"I am fine",
+				"I am good",
+				"I am ok",
+				"fine",
+				"f9",
+				"gd",
+				"gud"
+			],
+			"responses": [
+				"Good to hear that, how may I help you?",
+				"How can I help you?",
+				"How may I help you?",
+				"Tell me if you need any kind of help?"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "nameIntro",
+			"patterns": [
+				"Who are you",
+				"What is you name",
+				"Do you have a name"
+			],
+			"responses": [
+				"Hi, I'm MOB-BOT",
+				"My name is MOB-BOT",
+				"I'm MOB-BOT"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "generalDiscussion1",
+			"patterns": [
+				"How is the weather today"
+			],
+			"responses": [
+				"It's sunny day"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "generalDiscussion2",
+			"patterns": [
+				"What events are available today"
+			],
+			"responses": [
+				"Live in concent will be at UOM JJ hall"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "goodbye",
+			"patterns": [
+				"thank you",
+				"cya",
+				"Bye",
+				"See you later",
+				"Goodbye",
+				"I am Leaving",
+				"Have a Good day",
+				"Thankyou, bye",
+				"Thanks, goodbye",
+				"thnx",
+				"thx",
+				"thanks",
+				"thankyew",
+				"ok bye",
+				"ok",
+				"Okay",
+				"oky",
+				"Okey",
+				"Okeh",
+				"o k",
+				"okie",
+				"K",
+				"ok fine",
+				"okh",
+				"thankyou"
+			],
+			"responses": [
+				"Feel free to contact again in case of any query!",
+				"Talk to you later",
+				"Goodbye!",
+				"We can talk about any query regarding this app or it's functions or working anytime, bye"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "name",
+			"patterns": [
+				"what is your name",
+				"what should I call you",
+				"whats your name?"
+			],
+			"responses": [
+				"You can call me Ambreen. How can I assist you?",
+				"I'm Tayyeba! I am here to assist you.",
+				"I'm Ammar, your chat support assistant."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "trace",
+			"patterns": [
+				"How can I trace",
+				"How to trace",
+				"How to do tracing",
+				"Can I know how to trace",
+				"Tell me about tracing",
+				"tell about tracing data",
+				"how to trce",
+				"hw to trace",
+				"hw to trce",
+				"where trace"
+			],
+			"responses": [
+				"On home screen, there is first button 'Trace'. Tap that button and on the next page there is a button labeled Scan. Scan the Data Matrix or GS-128 code to get the Tracing Data against that Code."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "track",
+			"patterns": [
+				"How can I track",
+				"How to track",
+				"How to do tracking",
+				"Can I know how to track",
+				"How tracking is done in this app",
+				"How to trak",
+				"how to track my order",
+				"how order is tracked",
+				"can I track my order?"
+			],
+			"responses": [
+				"On the home screen, you see two buttons. The 1st button is named Trace and the 2nd button bellow Trace is Track. To Track your item, you need to tap the track button and on the next screen there is a text box asking for tracking ID. Enter your Tracking ID to get the tracking results."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "chat",
+			"patterns": [
+				"What is your chat support timing",
+				"when are you available",
+				"when I can talk to you"
+			],
+			"responses": [
+				"I am available 24/7. Feel free to ask anything.",
+				"I am available 24/7",
+				"you can ask anytime you want"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "noHelp",
+			"patterns": [
+				"nope",
+				"no",
+				"no I don't need your help",
+				"nah",
+				"nahi",
+				"ni",
+				"no I dont need ur help",
+				"i dont need help"
+			],
+			"responses": [
+				"I am available 24/7. Feel free to ask anything if you want.",
+				"I am available 24/7, if you need help regarding the app you can ask anytime",
+				"you can ask anytime for help regarding this app if you want"
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "yesHelp",
+			"patterns": [
+				"yes",
+				"yeah",
+				"yes I need help",
+				"yea",
+				"yass",
+				"yo",
+				"yep",
+				"yup",
+				"yeppie"
+			],
+			"responses": [
+				"How can I help you?",
+				"What help do you need?",
+				"you can ask anytime for help regarding this app."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "order",
+			"patterns": [
+				"how to check order",
+				"how my order is checked",
+				"where to see my order",
+				"order details."
+			],
+			"responses": [
+				"You can only track your order in this app. On home screen you can see track button to track your order."
+			],
+			"context_set": ""
+		},
+		{
+			"tag": "idleQuestions",
+			"patterns": [
+				"Can we have a conversation",
+				"What is your age",
+				"Why are you doing this?",
+				"You are not giving me answer of my question?",
+				"answer my question",
+				"gossip",
+				"let's talk",
+				"lets chat",
+				"joke",
+				"tell me joke"
+			],
+			"responses": [
+				"We can talk about any query regarding this app or it's functions or working",
+				"Feel free to ask anything regarding the application only.",
+				"Please ask freely about the Applications and queries regarding application."
+			],
+			"context_set": ""
+		}
+	]
 }
