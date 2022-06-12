@@ -87,7 +87,7 @@
 			"tag": "nameIntro",
 			"patterns": [
 				"Who are you",
-				"What is you name",
+				"What is your name",
 				"Do you have a name"
 			],
 			"responses": [
